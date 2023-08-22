@@ -1,12 +1,22 @@
-import { StyleSheet, View, Text, } from "react-native";
+import { StyleSheet, View, Text, FlatList, } from "react-native";
+import { Ussd } from "../components/ussd";
+import { MtnData } from "../Data/mtnData";
 
 
 
-export default function MTN() {
+export default function MTN({data}) {
 
     return(
-        <View>
-            <Text>Mtn</Text>
+        <View style={styles.root}>
+          <Ussd data={MtnData}/>
         </View>
-    )
+    ) 
 }
+
+
+
+const styles = StyleSheet.create({
+    root: {
+        flex: 1
+    }
+})
