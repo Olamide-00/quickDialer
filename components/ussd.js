@@ -4,7 +4,7 @@ import { FlatList, StyleSheet, Text, TouchableOpacity, View,Platform, Linking} f
 
 
 
-export function Ussd({ data, styling }) {
+export function Ussd({ data}) {
     const clickHandler = (item) => {
         if(Platform.OS === "ios") {
             Linking.openURL(`telprompt:${item.code}`)
