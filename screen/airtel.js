@@ -8,8 +8,14 @@ import { AirtelData } from "../Data/airtelData";
 
 export default function Airtel() {
     return(
-        <View>
+        <View style={styles.root}>
             <Ussd data={AirtelData}/>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    root: {
+        flex: 1
+    }
+})

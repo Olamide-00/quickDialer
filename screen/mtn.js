@@ -17,6 +17,6 @@ export default function MTN({data}) {
 
 const styles = StyleSheet.create({
     root: {
-        flex: 1
+        flex: 1,
     }
 })

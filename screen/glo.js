@@ -4,8 +4,15 @@ import { GloData } from "../Data/gloData";
 
 export default function GLO() {
     return(
-        <View>
+        <View style={styles.root}>
             <Ussd data={GloData} />
         </View>
     )
 }
+
+
+const styles= StyleSheet.create({
+    root: {
+        flex: 1
+    }
+})

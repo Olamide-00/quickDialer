@@ -7,8 +7,14 @@ import { EtisalatData } from "../Data/etisalatData";
 
 export default function Etisalat() {
     return(
-        <View>
+        <View style={styles.root}>
             <Ussd data={EtisalatData} />
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    root: {
+        flex: 1
+    }
+})
